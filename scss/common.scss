@@ -1,0 +1,134 @@
+$base-background-color: #333333;
+$base-a-color:#16A05F;
+
+*{
+	font-size:12px;
+	color:#000;
+}
+/**基础样式**/
+a{
+	color:$base-a-color;
+	font-size:12px;
+}
+
+body{
+	background:#eeeded;
+}
+
+.container-fluid{
+	width:100%;
+}
+
+.container{
+	width:1170px;
+	padding:0px 15px;
+	margin:auto;
+}
+
+/**组件样式**/
+
+.header{
+	background:$base-background-color;
+	height:60px;
+	.logo{
+		display:inline-block;
+		width: 110px;
+		height: 60px;
+		margin-right: 60px;
+		img{
+			margin-top:10px;
+		}
+	}
+	nav{
+		display: inline-block;
+		height: 60px;
+		vertical-align:top;
+		li{
+			position: relative;
+			display: inline-block;
+			margin-right: 40px;
+			cursor: pointer;
+			height: 60px;
+			float: left;
+			line-height: 60px;
+			a{
+				font-size: 14px;
+				color: #fff;
+				margin-right: 5px;
+			}
+
+			.arrow-icon{
+				width: 8px;
+				height: 8px;
+				border-top: 1px solid #c1c1c1;
+				border-left: 1px solid #c1c1c1;
+				display: inline-block;
+				transform: rotate(-135deg);
+    			transition: transform .4s ease-out;
+    			margin-bottom: 2px;
+
+
+			}
+
+			&:hover{
+				color: $base-a-color;
+				a{
+					color: $base-a-color;
+					text-decoration: none;	
+				}
+				.arrow-icon{
+					border-top: 1px solid $base-a-color;
+					border-left: 1px solid $base-a-color;
+					transform: rotate(45deg);
+					margin-bottom: -2px;
+				}
+				.submenu{
+					display: block;
+				}
+			}
+
+			.submenu{
+				width: 280px;
+				display: block;
+				position: absolute;
+				background: #fff;
+				display: none;
+				h3{
+					margin: 10px 0;
+					padding: 0 15px;
+					background: #fafafa;
+					height: 28px;
+					line-height: 28px;
+					font-weight: 300;
+				}
+				a{
+
+					display: block;
+					height: 30px;
+					line-height: 30px;
+					padding: 0 15px;
+					margin:0px;
+					color: #333;
+					font-size: 12px;
+					&:hover{
+						color: $base-a-color;
+					}
+					i{
+						width: 14px;
+						height: 14px;
+						margin-right: 10px;
+						display: inline-block;
+						background: #333;
+						vertical-align:middle;
+						margin-bottom: 2px;
+					}
+				
+				}
+
+			}
+		}
+	}
+}
+
+
+

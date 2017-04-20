@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  font-size: 12px;
+  color: #000; }
+
+/**基础样式**/
+a {
+  color: #16A05F;
+  font-size: 12px; }
+
+body {
+  background: #eeeded; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 1170px;
+  padding: 0px 15px;
+  margin: auto; }
+
+/**组件样式**/
+.header {
+  background: #333333;
+  height: 60px; }
+  .header .logo {
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+    margin-right: 60px; }
+    .header .logo img {
+      margin-top: 10px; }
+  .header nav {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top; }
+    .header nav li {
+      position: relative;
+      display: inline-block;
+      margin-right: 40px;
+      cursor: pointer;
+      height: 60px;
+      float: left;
+      line-height: 60px; }
+      .header nav li a {
+        font-size: 14px;
+        color: #fff;
+        margin-right: 5px; }
+      .header nav li .arrow-icon {
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #c1c1c1;
+        border-left: 1px solid #c1c1c1;
+        display: inline-block;
+        transform: rotate(-135deg);
+        transition: transform .4s ease-out;
+        margin-bottom: 2px; }
+      .header nav li:hover {
+        color: #16A05F; }
+        .header nav li:hover a {
+          color: #16A05F;
+          text-decoration: none; }
+        .header nav li:hover .arrow-icon {
+          border-top: 1px solid #16A05F;
+          border-left: 1px solid #16A05F;
+          transform: rotate(45deg);
+          margin-bottom: -2px; }
+        .header nav li:hover .submenu {
+          display: block; }
+      .header nav li .submenu {
+        width: 280px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        display: none; }
+        .header nav li .submenu h3 {
+          margin: 10px 0;
+          padding: 0 15px;
+          background: #fafafa;
+          height: 28px;
+          line-height: 28px;
+          font-weight: 300; }
+        .header nav li .submenu a {
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 15px;
+          margin: 0px;
+          color: #333;
+          font-size: 12px; }
+          .header nav li .submenu a:hover {
+            color: #16A05F; }
+          .header nav li .submenu a i {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            display: inline-block;
+            background: #333;
+            vertical-align: middle;
+            margin-bottom: 2px; }
+
+/*# sourceMappingURL=common.css.map */
