@@ -17,6 +17,7 @@ body{
 
 .container-fluid{
 	width:100%;
+	min-width: 1200px;
 }
 
 .container{
@@ -66,8 +67,6 @@ body{
 				transform: rotate(-135deg);
     			transition: transform .4s ease-out;
     			margin-bottom: 2px;
-
-
 			}
 
 			&:hover{
@@ -125,6 +124,43 @@ body{
 				
 				}
 
+			}
+		}
+	}
+
+	.nav-right-box{
+		display: inline-block;
+		height: 60px;
+		float: right;
+		.search{
+			cursor: pointer;
+			position: relative;
+			margin-top: 11px;
+			margin-bottom: 11px;
+			#keywords{
+				border: 1px solid #787d82;
+				height: 28px;
+				padding: 4px;
+				width: 280px;
+				background: #fff;
+				color: #000;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+			.icon-search{
+			    position: absolute;
+			    right: 10px;
+			    font-size: 20px;
+			    font-weight: bold;
+			    line-height: 38px;
+			}
+			&:hover{
+				#keywords{
+					border-color: $base-a-color;
+				}
+				.icon-search{
+					color: $base-a-color;
+				}
 			}
 		}
 	}
