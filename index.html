@@ -13,7 +13,7 @@
         <link rel="shortcut icon" href="http://zh.emorejia.com/public/static/img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="font-icon/iconfont.css">
-
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.min.css"> -->
         <link rel="stylesheet" type="text/css" href="css/common.css">
     </head>
@@ -57,7 +57,44 @@
     		    </div>
 		</header>
 
-
+        <div class="custom-modal" id="login-modal">
+            <div class="mask"></div>
+            <div class="form-modal">
+                <div class="form-container-modal">
+                    <span><i class="iconfont icon-close"></i><div class="clear"></div></span>
+                    <div class="title">
+                        <div class="fl">会员登录</div>
+                        <div class="fr">还没有账号<a id="sigup_now" href="http://sc.chinaz.com/" onclick="return false;">立即注册</a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <span class="msg_warning">用户名或密码错误</span>
+                    <div class="form">
+                          <input type="text" name="username" class="loginusername"  placeholder="邮箱/用户名">
+                          <input type="password" name="password" placeholder="密码">
+                    </div>
+                    <div class="frombtn">
+                        <button id="login" class="button login">登陆</button>
+                        <div class="remember">
+                            <input id="bcdl" type="checkbox" checked="true">
+                            <span>保持登录</span>
+                        </div>
+                        <div class="forget"><a href="#">忘记密码?</a></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="form-modal-footer">
+                    <div class="pd50">
+                      <h4>用第三方帐号直接登录</h4>
+                      <ul>
+                        <li id="sinal"><a href="http://sc.chinaz.com/">微博账号登录</a></li>
+                        <li id="qq" style="margin-right: 0px;"><a href="http://sc.chinaz.com/">QQ账号登录</a></li>
+                        <div class="clear"></div>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</body>
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
