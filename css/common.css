@@ -107,7 +107,8 @@ body {
       cursor: pointer;
       position: relative;
       margin-top: 11px;
-      margin-bottom: 11px; }
+      margin-bottom: 11px;
+      display: inline-block; }
       .header .nav-right-box .search #keywords {
         border: 1px solid #787d82;
         height: 28px;
@@ -127,5 +128,22 @@ body {
         border-color: #16A05F; }
       .header .nav-right-box .search:hover .icon-search {
         color: #16A05F; }
+    .header .nav-right-box #login-area {
+      display: inline-block;
+      vertical-align: middle; }
+      .header .nav-right-box #login-area ul li {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 15px; }
+        .header .nav-right-box #login-area ul li a {
+          font-size: 14px;
+          text-decoration: none; }
+        .header .nav-right-box #login-area ul li:hover {
+          background: #16A05F; }
+          .header .nav-right-box #login-area ul li:hover a {
+            color: #fff; }
+      .header .nav-right-box #login-area .header-signin {
+        margin-left: 30px; }
 
 /*# sourceMappingURL=common.css.map */
