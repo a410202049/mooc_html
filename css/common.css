@@ -84,7 +84,8 @@ input:-webkit-autofill {
         display: block;
         position: absolute;
         background: #fff;
-        display: none; }
+        display: none;
+        z-index: 9; }
         .header nav li .submenu h3 {
           margin: 10px 0;
           padding: 0 15px;
@@ -279,5 +280,34 @@ input:-webkit-autofill {
         background: #d63b22 url(../images/share/weibo.png) no-repeat 0px -5px; }
       .custom-modal .form-modal .form-modal-footer ul #qq a {
         background: #3eb0d8 url(../images/share/qq.png) no-repeat 0px -5px; }
+
+#index .content {
+  position: relative; }
+
+.body-content {
+  margin-top: 20px; }
+
+.path-banner {
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 120px;
+  overflow: hidden;
+  width: 1170px;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1); }
+  .path-banner a {
+    float: left;
+    height: 120px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+    width: 234px; }
+    .path-banner a:hover {
+      margin-top: -4px; }
+  .path-banner img {
+    border: 0 none;
+    display: block;
+    height: 100%;
+    width: 100%; }
 
 /*# sourceMappingURL=common.css.map */

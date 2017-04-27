@@ -66,6 +66,29 @@ $(function(){
 	})
 
 
+    /* 配置选项 */
+    var options = {
+      width: 1170, // 宽度
+      height: 460, // 高度
+      gridCol: 10, // 网格列数
+      gridRow: 5, // 网格行数
+      gridVertical: 20, // 栅格列数
+      gridHorizontal: 10, // 栅格行数
+      autoPlay: true, // 自动播放
+      ascending: true, // 图片按照升序播放
+      effects: [ // 使用的转场动画效果
+        'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+        'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+        'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+      ],
+      ie6Tidy: false, // IE6下精简效果
+      random: false, // 随机使用转场动画效果
+      duration: 4000, // 图片停留时长（毫秒）
+      speed: 900 // 转场效果时长（毫秒）
+    };
+    /* 创建轮播效果 */
+    $('#banner').vmcSlider(options);
+
 
 })
 
