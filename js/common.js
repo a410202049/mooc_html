@@ -39,7 +39,6 @@ function center(obj) {
 
 $(function(){
 	$('.custom-modal .icon-close').click(function(){
-
 		$(this).parents('.custom-modal').css("display","none");
 	})
 
@@ -66,7 +65,7 @@ $(function(){
 	})
 
 
-    /* 配置选项 */
+    /******* banner *******/
     var options = {
       width: 1170, // 宽度
       height: 460, // 高度
@@ -89,6 +88,17 @@ $(function(){
     /* 创建轮播效果 */
     $('#banner').vmcSlider(options);
 
+
+    /******* 学生评价 *******/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop:true,
+        autoplay:10000,
+        slidesPerGroup:3,
+    });
 
 })
 
