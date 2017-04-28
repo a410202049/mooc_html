@@ -295,6 +295,8 @@ input:-webkit-autofill {
   position: relative; }
 #index .course-list .ui-img-hover:nth-child(5n+0) {
   margin-right: 0px; }
+#index .course-list .ui-img-hover:nth-child(n+6) {
+  margin-bottom: 0px; }
 #index .course-list .ui-img-hover {
   float: left;
   border-radius: 8px;
