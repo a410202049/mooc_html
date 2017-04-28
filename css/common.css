@@ -14,6 +14,16 @@ body {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
 .clear {
   clear: both; }
 
@@ -283,9 +293,63 @@ input:-webkit-autofill {
 
 #index .content {
   position: relative; }
+#index .course-list .ui-img-hover:nth-child(5n+0) {
+  margin-right: 0px; }
+#index .course-list .ui-img-hover {
+  float: left;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  width: 215px;
+  height: 145px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+  -webkit-transition: .3s;
+          transition: .3s;
+  position: relative; }
+  #index .course-list .ui-img-hover:hover {
+    box-shadow: 0 14px 22px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  #index .course-list .ui-img-hover a {
+    display: block;
+    position: relative;
+    width: 215px;
+    height: 145px; }
+    #index .course-list .ui-img-hover a img {
+      width: 100%;
+      height: 100%; }
+  #index .course-list .ui-img-hover .item-tag {
+    position: absolute;
+    bottom: 0;
+    width: 215px;
+    height: 60px;
+    background: #fff;
+    padding-left: 13px;
+    font-size: 12px;
+    z-index: 8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+    #index .course-list .ui-img-hover .item-tag .item-tag1 {
+      margin-top: 13px;
+      color: #000;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    #index .course-list .ui-img-hover .item-tag .item-tag2 {
+      margin-top: 3px;
+      color: #b5b5b5;
+      padding-left: 14px;
+      box-sizing: border-box;
+      background: url(../images/ui-per.png) center left no-repeat; }
 
 .body-content {
   margin-top: 20px; }
+
+#banner, .vui-slider {
+  overflow: hidden; }
 
 .path-banner {
   background-color: #fff;
@@ -309,5 +373,27 @@ input:-webkit-autofill {
     display: block;
     height: 100%;
     width: 100%; }
+
+.title-box {
+  padding: 25px 0px; }
+  .title-box .tit-txt {
+    float: left;
+    font-size: 16px;
+    color: #8a8a8a; }
+  .title-box a {
+    float: right;
+    text-decoration: none; }
+    .title-box a span {
+      height: 18px;
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      color: #8a8a8a; }
+    .title-box a .tit-tag {
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 12px;
+      background: url(../images/tit.png) no-repeat; }
 
 /*# sourceMappingURL=common.css.map */
