@@ -301,9 +301,9 @@ input:-webkit-autofill {
 
 #index .content {
   position: relative; }
-#index .course-list .ui-img-hover:nth-child(5n+0) {
+#index .course-list .ui-img-hover:nth-child(4n+0) {
   margin-right: 0px; }
-#index .course-list .ui-img-hover:nth-child(n+6) {
+#index .course-list .ui-img-hover:nth-child(n+5) {
   margin-bottom: 0px; }
 #index .course-list .ui-img-hover {
   float: left;
@@ -311,8 +311,8 @@ input:-webkit-autofill {
   overflow: hidden;
   margin-right: 23px;
   margin-bottom: 23px;
-  width: 215px;
-  height: 145px;
+  width: 275px;
+  height: 174px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
   -webkit-transition: .3s;
           transition: .3s;
@@ -324,18 +324,18 @@ input:-webkit-autofill {
             transform: translateY(-10px); }
   #index .course-list .ui-img-hover a {
     display: block;
-    position: relative;
-    width: 215px;
-    height: 145px;
-    border-radius: 8px; }
+    position: relative; }
     #index .course-list .ui-img-hover a img {
       width: 100%;
       height: 100%;
-      border-radius: 8px; }
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
   #index .course-list .ui-img-hover .item-tag {
     position: absolute;
     bottom: 0;
-    width: 202px;
+    width: 262px;
     height: 60px;
     background: #fff;
     padding-left: 13px;
