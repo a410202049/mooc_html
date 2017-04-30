@@ -326,14 +326,16 @@ input:-webkit-autofill {
     display: block;
     position: relative;
     width: 215px;
-    height: 145px; }
+    height: 145px;
+    border-radius: 8px; }
     #index .course-list .ui-img-hover a img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-radius: 8px; }
   #index .course-list .ui-img-hover .item-tag {
     position: absolute;
     bottom: 0;
-    width: 215px;
+    width: 202px;
     height: 60px;
     background: #fff;
     padding-left: 13px;
