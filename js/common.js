@@ -1,14 +1,15 @@
-$.fn.extend({
-    animateCss: function (animationName,func) {
+"use strict";
+
+$.fn.extend({          
+    animateCss:function (animationName,func) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         $(this).addClass('animated ' + animationName).one(animationEnd, function() {
             if(func){
-            	func();	
+             func(); 
             }
         });
-    }
-});
-
+    }    
+}); 
 
 //水平垂直居中 支持浏览器窗口大小改变，存在垂直滚动条
 function center(obj) {
