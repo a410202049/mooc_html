@@ -46,13 +46,13 @@ $(function(){
 	$('#js-signin-btn').click(function(){
 		$('#login-modal').css("display","block");
 		center($("#login-modal .form-modal"));
-		$("#login-modal .form-modal").animateCss("fadeInDown",function(){})
+		// $("#login-modal .form-modal").animateCss("fadeIn",function(){})
 	})
 
 	$('#js-register-btn').click(function(){
 		$('#register-modal').css("display","block");
 		center($("#register-modal .form-modal"));
-		$("#register-modal .form-modal").animateCss("fadeInDown",function(){})
+		// $("#register-modal .form-modal").animateCss("fadeIn",function(){})
 	})
 
 	$('#login_now').click(function(){
